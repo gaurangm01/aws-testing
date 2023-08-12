@@ -47,5 +47,7 @@ rows = cursor_obj.fetchall()
 for row in rows:
     print(row)
 
+print('END')
+
 # Close the connection
 conn.close()
