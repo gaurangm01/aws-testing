@@ -27,7 +27,7 @@ jobs:
       - name: Build and push Docker image
         env:
           ECR_REGISTRY: ${{steps.login-ecr.outputs.registry}}
-          ECR_REPOSITORY: ${{secrets.ECR_REPO_NAME}}
+          ECR_REPOSITORY: testing-aws
           IMAGE_TAG: ${{github.sha}}
 
         run: |
