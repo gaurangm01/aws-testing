@@ -6,6 +6,6 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -r requirement.txt
 COPY . /code
 EXPOSE 8000
-COPY entrypoint.sh /code
+COPY scripts/entrypoint.sh /code
 RUN chmod +x entrypoint.sh
 ENTRYPOINT ["sh", "entrypoint.sh"]
